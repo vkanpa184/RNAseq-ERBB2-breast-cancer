@@ -9,13 +9,6 @@ path = "Documents/UCD/Bio_Principles/Assignment_2"
 setwd(path)
 
 
-# Inspect ERBB2-mutant patients
-her2 = read.table(file = 'brca_tcga_pan_can_atlas_2018_clinical_data.tsv', sep = '\t', header = TRUE)
-her2_patients = her2$Patient.ID
-
-# Inspect Clinical File.
-data_patient  = read.delim("data_clinical_patient.txt")
-
 # Inspect RNASeq File.
 data_Rnaseq = read.delim("data_mrna_seq_v2_rsem.txt")
 
